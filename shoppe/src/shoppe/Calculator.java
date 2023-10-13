@@ -7,11 +7,12 @@ public class Calculator {
     
     // This method could throw an ArithmeticException
     public double divide(int x, int y) {
+        double z = 0;
         try{
-            int z = x / y;
+            z = x / y;
         }catch(ArithmeticException e){
             System.err.println("Error: Division by zero is not allowed." + e);
         }
-        return x / y;
+        return z;
     }
 }
